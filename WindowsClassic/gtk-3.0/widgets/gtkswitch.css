@@ -1,0 +1,33 @@
+GtkSwitch {
+	/**
+	* Style properties inheritance:
+	*  GtkSwitch->GtkWidget.
+	*/
+
+	/* The minimum width of the. */
+	/* slider-width: 36; */ /* gint, >= 36 */
+
+}
+
+GtkSwitch.slider {
+	background-color: @scrollbar;
+}
+
+GtkSwitch.slider:insensitive {
+	background-color: shade(@scrollbar, 1.2)
+}
+
+GtkSwitch.trough {
+	background-color: @scrollbar_bg;
+	color: @text_normal;
+}
+
+GtkSwitch.trough:active {
+	background-color: @bg_focused;
+	color: @text_focused;
+}
+
+GtkSwitch.trough:insensitive {
+	background-color: shade(@scrollbar_bg, 0.8);
+	color: @text_insensitive;
+}

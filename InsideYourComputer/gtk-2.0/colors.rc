@@ -1,0 +1,34 @@
+
+
+gtk-theme-name = "InsideYourComputer"
+gtk-icon-theme-name = "InsideYourComputer"
+gtk-font-name = "Microsoft Sans Serif 10"
+#gtk-font-name = "UnPilgi 8"
+#gtk-enable-tooltips = 0
+
+
+gtk_color_scheme = "text_normal:#000000"		# (WindowText=0 0 0)
+gtk_color_scheme = "text_focused:#000000"		# (HilightText=0 0 0)
+gtk_color_scheme = "text_insensitive:#609860"		# (GrayText=96 152 96)
+gtk_color_scheme = "bg_focused:#F8FFA0"			# (Hilight=248 255 160)
+gtk_color_scheme = "widgets_bg:#A8C8A8"			# (Menu=168 200 168)
+
+gtk_color_scheme = "scrollbar:#A8C8A8"			# (Menu=168 200 168)
+gtk_color_scheme = "scrollbar_bg:#D8E0D8"		# (Scrollbar=216 224 216)
+gtk_color_scheme = "stepper:black"
+gtk_color_scheme = "expander:black"
+
+gtk_color_scheme = "container_bg:#FFFFFF"		# (Window=255 255 255)
+
+gtk_color_scheme = "titlebar_text:#FFFFFF"		# (TitleText=255 255 255)
+gtk_color_scheme = "titlebar_bg:#E00000"		# (ActiveTitle=224 0 0)
+gtk_color_scheme = "titlebar_text_inactive:#D8E0D8"	# (InactiveTitleText=216 224 216)
+gtk_color_scheme = "titlebar_bg_inactive:#60A880"	# (InactiveTitle=96 168 128)
+
+gtk_color_scheme = "desktop_icon_text:white"
+gtk_color_scheme = "desktop_icon_text_selected:white"
+gtk_color_scheme = "desktop_icon_text_active:white"
+
+gtk_color_scheme = "tooltips_text:#004848"		# (InfoText=0 72 72)
+gtk_color_scheme = "tooltips_bg:#FFEFD2"		# (InfoWindow=255 239 210)
+

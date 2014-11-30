@@ -1,0 +1,37 @@
+
+style "GtkTextView"
+{
+######	Style Properties
+
+	GtkTextView	::error-underline-color = "red"		# GdkColor*	(Color with which to draw error-indication underlines.)
+
+######	Colors
+
+#	fg[NORMAL]		= @test_color	# ?
+	bg[NORMAL]		= @widgets_bg	# widget's bg
+	text[NORMAL]		= @text_normal	# text
+	base[NORMAL]		= @container_bg	# whole text area bg
+
+#	fg[ACTIVE]		= @test_color	# ?
+#	bg[ACTIVE]		= @test_color	# ?
+	text[ACTIVE]		= @text_focused	# selected text	
+	base[ACTIVE]		= @bg_focused	# selected text bg
+
+#	fg[PRELIGHT]		= @test_color	# ?
+#	bg[PRELIGHT]		= @test_color	# ?
+#	text[PRELIGHT]		= @test_color	# ?
+#	base[PRELIGHT]		= @test_color	# ?
+
+#	fg[SELECTED]		= @test_color	# ?
+#	bg[SELECTED]		= @test_color	# ?
+	text[SELECTED]		= @text_focused	# selected text
+	base[SELECTED]		= @bg_focused	# selected text bg
+
+#	fg[INSENSITIVE]		= @test_color	# ?
+#	bg[INSENSITIVE]		= @test_color	# ?
+#	text[INSENSITIVE]	= @test_color	# ?
+#	base[INSENSITIVE]	= @test_color	# ?
+
+}
+
+class "GtkTextView" style "GtkTextView"

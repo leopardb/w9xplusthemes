@@ -1,0 +1,88 @@
+
+style "standard-scrollbar"
+{
+######	Style Properties
+
+	#xthickness = 5
+	#ythickness = 5
+
+	#GtkWidget -> GtkRange -> GtkScale
+	#GtkWidget -> GtkRange -> GtkScrollbar
+
+	GtkRange	::arrow-displacement-x = 0		# gint (How far in the x direction to move the arrow when the button is depressed.)
+	GtkRange	::arrow-displacement-y = 0		# gint (How far in the y direction to move the arrow when the button is depressed.)
+	GtkRange	::arrow-scaling = 0.5			# gfloat (The arrow size proportion relative to the scroll button size. Allowed values: [0,1])
+	GtkRange	::slider_width = 16			# gint (Width of scrollbar or scale thumb.)
+	GtkRange	::stepper_size = 14			# gint (Length of step buttons at ends.)
+	GtkRange	::stepper_spacing = 0			# gint (The spacing between the stepper buttons and thumb.)
+	GtkRange	::trough_border = 0			# gint (Spacing between thumb/steppers and outer trough bevel.)
+	GtkRange	::trough-under-steppers = 1		# gboolean (Whether to draw the trough across the full length of the range or to exclude the steppers and their spacing. )
+
+	GtkScale	::slider-length = 24			# gint (Length of scale's slider.)
+	GtkScale	::value-spacing = 2			# gint (Space between value text and the slider/trough area.)
+
+	GtkScrollbar	::fixed-slider-length = 0		# gboolean (Don't change slider size, just lock it to the minimum length.)
+	GtkScrollbar	::has-backward-stepper = 1		# gboolean (Display the standard backward arrow button.)
+	GtkScrollbar	::has-forward-stepper = 1		# gboolean (Display the standard forward arrow button.)
+	GtkScrollbar	::has-secondary-backward-stepper = 0	# gboolean (Display a second backward arrow button on the opposite end of the scrollbar.)
+	GtkScrollbar	::has-secondary-forward-stepper = 0	# gboolean (Display a second forward arrow button on the opposite end of the scrollbar.)
+	GtkScrollbar	::min-slider-length = 21		# gint (Minimum length of scrollbar slider.)
+
+######	Colors
+
+	/*fg[NORMAL]		= @stepper		# stepper color when not disabled (insensitive)
+	fg[PRELIGHT]		= @test_fg
+	fg[SELECTED]		= @test_fg
+	fg[ACTIVE]		= @test_fg
+	fg[INSENSITIVE]		= @stepper		# stepper color when disabled
+
+	bg[NORMAL]		= @scrollbar		# scroll bar color and stepper background
+	bg[PRELIGHT]		= @scrollbar		# scroll bar color and stepper background
+	bg[SELECTED]		= @test_bg
+	bg[ACTIVE]		= @scrollbar_bg		# scroll bar background color
+	bg[INSENSITIVE]		= @scrollbar		# stepper background (and scroll bar ?) color when disabled
+
+	text[NORMAL]		= @test_text
+	text[PRELIGHT]		= @test_text
+	text[SELECTED]		= @test_text
+	text[ACTIVE]		= @test_text
+	text[INSENSITIVE]	= @test_text
+
+	base[NORMAL]		= @test_base
+	base[ACTIVE]		= @test_base
+	base[PRELIGHT]		= @test_base
+	base[SELECTED]		= @test_base
+	base[INSENSITIVE]	= @test_base*/
+
+	/*fg[NORMAL]		= @test_fg
+	fg[PRELIGHT]		= @test_fg
+	fg[SELECTED]		= @test_fg
+	fg[ACTIVE]		= @test_fg
+	fg[INSENSITIVE]		= @test_fg
+
+	bg[NORMAL]		= @test_bg
+	bg[PRELIGHT]		= @test_bg
+	bg[SELECTED]		= @test_bg
+	bg[ACTIVE]		= @test_bg
+	bg[INSENSITIVE]		= @test_bg
+
+	text[NORMAL]		= @test_text
+	text[PRELIGHT]		= @test_text
+	text[SELECTED]		= @test_text
+	text[ACTIVE]		= @test_text
+	text[INSENSITIVE]	= @test_text
+
+	base[NORMAL]		= @test_base
+	base[ACTIVE]		= @test_base
+	base[PRELIGHT]		= @test_base
+	base[SELECTED]		= @test_base
+	base[INSENSITIVE]	= @test_base*/
+}
+
+#class "GtkRange" style "standard-scrollbar"
+#class "GtkScale" style "standard-scrollbar"
+class "GtkScrollbar" style "standard-scrollbar"
+
+#widget_class "*Scrollbar*" style "standard-scrollbar"
+#widget_class "GtkScrollbar" style "standard-scrollbar"
+

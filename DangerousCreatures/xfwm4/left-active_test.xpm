@@ -1,0 +1,16 @@
+/* XPM */
+static char * left_active_xpm[] = {
+/* <Values> */
+/* <width/cols> <height/rows> <colors> <char on pixel>*/
+"5 1 8 1",
+/* <Colors> */
+"       c None",
+"=      c #FFFFFF s active_hilight_1",
+"+      c #D5D6D5 s active_hilight_2",
+"$      c #4B58A2 s active_color_1",
+"@      c #4B58A2 s active_color_2",
+".      c #525FAB s active_border_color",
+"#      c #848FD6 s active_shadow_1",
+"*      c #B4BAB4 s active_shadow_2",
+/* <Pixels> */
+"=+.@#"};

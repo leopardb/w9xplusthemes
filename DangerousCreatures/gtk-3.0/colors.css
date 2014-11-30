@@ -1,0 +1,66 @@
+/**
+ * Color definitions.
+ *
+ * Each color defined in this file is usable as a symbolic color
+ * in all files included after it.
+ *
+ * Color definitions have the format `@define-color <name> <value>;',
+ * where <name> is a name you choose, and <value> is a color definition.
+ * Defined colors can be used in rules with the syntax `@<name>'
+ *
+ * The most common color definition is a html color code: #rrbbgg
+ * For more information see (1) or (2).
+ *
+ * (1) file:///usr/share/devhelp/books/gtk3/GtkCssProvider.html#gtkcssprovider-symbolic-colors
+ * (2) http://developer.gnome.org/gtk3/3.1/GtkCssProvider.html#gtkcssprovider-symbolic-colors
+ */
+
+/* Some common color definitions
+ *
+ * @define-color base-color #ff00ff;
+ * @define-color background-color #ff00ff;
+ * @define-color forground-color #ff00ff;
+ * @define-color text-color #ff00ff;
+ */
+
+@define-color text_normal #000000;
+@define-color text_focused #FFFFFF;
+@define-color text_insensitive #484848;
+@define-color bg_focused #008080;
+@define-color widgets_bg #707070;
+
+@define-color scrollbar #707070;
+@define-color scrollbar_bg #B8B8B8;
+@define-color stepper black;
+@define-color expander black;
+
+@define-color container_bg #B8B8B8;
+
+@define-color titlebar_text #FFFFFF;
+@define-color titlebar_bg #008080;
+@define-color titlebar_text_inactive #707070;
+@define-color titlebar_bg_inactive #484848;
+
+@define-color desktop_icon_text white;
+@define-color desktop_icon_text_selected white;
+@define-color desktop_icon_text_active white;
+
+@define-color tooltips_text #800080;
+@define-color tooltips_bg #FFFFFF;
+
+@define-color test_green #00FF00;
+@define-color test_red #FF0000;
+@define-color test_blue #0000FF;
+
+@define-color buttonshadow #484848;
+
+
+/*@define-color base_color #3c4446;
+@define-color bg_color #2e3436;*/
+/*@define-color text_color #000000;*/
+/*@define-color fg_color #dcdcdc;*/
+@define-color selected_bg_color @bg_focused;
+@define-color selected_fg_color @text_focused;
+/*@define-color tooltip_bg_color #2d2d2d;
+@define-color tooltip_fg_color #dcdcdc;
+@define-color scrollbar_bg_color #fcb11c;*/

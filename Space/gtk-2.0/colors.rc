@@ -1,0 +1,31 @@
+
+
+gtk-theme-name = "Space"
+gtk-icon-theme-name = "Space"
+#gtk-enable-tooltips = 0
+
+
+gtk_color_scheme = "text_normal:#000000"		# (WindowText=0 0 0)
+gtk_color_scheme = "text_focused:#00FF00"		# (HilightText=0 255 0)
+gtk_color_scheme = "text_insensitive:#506068"		# (GrayText=80 96 104)
+gtk_color_scheme = "bg_focused:#000000"			# (Hilight=0 0 0)
+gtk_color_scheme = "widgets_bg:#809098"			# (Menu=128 144 152)
+
+gtk_color_scheme = "scrollbar:#809098"			# (Menu=128 144 152)
+gtk_color_scheme = "scrollbar_bg:#C0C8D0"		# (Scrollbar=192 200 208)
+gtk_color_scheme = "stepper:black"
+gtk_color_scheme = "expander:black"
+
+gtk_color_scheme = "container_bg:#FFFFFF"		# (Window=255 255 255)
+
+gtk_color_scheme = "titlebar_text:#00FF00"		# (TitleText=0 255 0)
+gtk_color_scheme = "titlebar_bg:#000000"		# (ActiveTitle=0 0 0)
+gtk_color_scheme = "titlebar_text_inactive:#C0C0C0"	# (InactiveTitleText=192 192 192)
+gtk_color_scheme = "titlebar_bg_inactive:#506068"	# (InactiveTitle=80 96 104)
+
+gtk_color_scheme = "desktop_icon_text:white"
+gtk_color_scheme = "desktop_icon_text_selected:white"
+gtk_color_scheme = "desktop_icon_text_active:white"
+
+gtk_color_scheme = "tooltips_text:#000000"		# (InfoText=0 0 0)
+gtk_color_scheme = "tooltips_bg:#FFFFFF"		# (InfoWindow=255 255 255)

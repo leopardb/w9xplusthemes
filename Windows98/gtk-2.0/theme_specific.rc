@@ -1,0 +1,26 @@
+
+
+style "GeneralFont"
+{
+	font_name = "News Gothic MT, 9"
+}
+
+class "*" style "GeneralFont"
+
+
+style "PanelFont"
+{
+	font_name = "News Gothic MT, Italic 12"
+}
+
+widget_class "XfcePanelWindow.PanelItembar*" style "PanelFont"
+
+
+style "StartButtonFont"
+{
+	font_name = "News Gothic MT, Bold Italic 12"
+}
+
+widget_class "XfcePanelWindow.PanelItembar.XfceApplicationsMenuPlugin.GtkToggleButton.XfceHVBox.GtkLabel" style "StartButtonFont"
+
+

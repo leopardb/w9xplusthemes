@@ -1,0 +1,23 @@
+
+style "GeneralFont"
+{
+	font_name = "Calisto MT, 10"
+}
+
+class "*" style "GeneralFont"
+
+
+style "PanelFont"
+{
+	font_name = "Calisto MT, 10"
+}
+
+widget_class "XfcePanelWindow.PanelItembar*" style "PanelFont"
+
+
+style "StartButtonFont"
+{
+	font_name = "Calisto MT, Bold 10"
+}
+
+widget_class "XfcePanelWindow.PanelItembar.XfceApplicationsMenuPlugin.GtkToggleButton.XfceHVBox.GtkLabel" style "StartButtonFont"

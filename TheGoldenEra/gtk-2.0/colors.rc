@@ -1,0 +1,31 @@
+
+
+gtk-theme-name = "TheGoldenEra"
+gtk-icon-theme-name = "TheGoldenEra"
+#gtk-enable-tooltips = 0
+
+
+gtk_color_scheme = "text_normal:#000000"		# (WindowText=0 0 0)
+gtk_color_scheme = "text_focused:#FFF8E0"		# (HilightText=255 248 224)
+gtk_color_scheme = "text_insensitive:#708F70"		# (GrayText=112 143 112)
+gtk_color_scheme = "bg_focused:#8088A8"			# (Hilight=128 136 168)
+gtk_color_scheme = "widgets_bg:#B8C8B8"			# (Menu=184 200 184)
+
+gtk_color_scheme = "scrollbar:#B8C8B8"			# (Menu=184 200 184)
+gtk_color_scheme = "scrollbar_bg:#DCE4DC"		# (Scrollbar=220 228 220)
+gtk_color_scheme = "stepper:black"
+gtk_color_scheme = "expander:black"
+
+gtk_color_scheme = "container_bg:#FFF8E0"		# (Window=255 248 224)
+
+gtk_color_scheme = "titlebar_text:#FFF8E0"		# (TitleText=255 248 224)
+gtk_color_scheme = "titlebar_bg:#D87060"		# (ActiveTitle=216 112 96)
+gtk_color_scheme = "titlebar_text_inactive:#000000"	# (InactiveTitleText=0 0 0)
+gtk_color_scheme = "titlebar_bg_inactive:#708F70"	# (InactiveTitle=112 143 112)
+
+gtk_color_scheme = "desktop_icon_text:white"
+gtk_color_scheme = "desktop_icon_text_selected:white"
+gtk_color_scheme = "desktop_icon_text_active:white"
+
+gtk_color_scheme = "tooltips_text:#000000"		# (InfoText=0 0 0)
+gtk_color_scheme = "tooltips_bg:#FFFFFF"		# (InfoWindow=255 255 225)

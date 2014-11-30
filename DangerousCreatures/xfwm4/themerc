@@ -1,0 +1,25 @@
+#active_color_1=#503840
+#active_color_2=#FF0000
+#active_hilight_1=#FF0000
+#active_hilight_2=#FF0000
+active_border_color=#000000
+inactive_border_color=#000000
+button_layout=O|HMC
+button_offset=1
+button_spacing=0
+full_width_title=true
+maximized_offset=2
+show_app_icon=true
+title_alignment=left
+title_horizontal_offset=2
+title_vertical_offset_active=1
+title_vertical_offset_inactive=1
+
+#Added to fit the theme
+
+title_font=Arial, Bold 8
+#active_hilight_1=#707070
+active_hilight_2=#B8B8B8
+#active_border_color=#707070
+#active_shadow_1=#484848
+#active_shadow_2=#000000

@@ -1,0 +1,402 @@
+/**
+ * Style classes.
+ *
+ * The style classes rules apply to any widget defining that class.
+ * For example, the .buttons class applies to all types of buttons,
+ * and allows you to theme all these types of buttons using a single
+ * set of rules.
+ *
+ * You can use all style properties defined for any of the class
+ * members in the class rules. These properties can be found in
+ * 'Template\Widgets\WidgetName.css'.
+ */
+
+* {
+	/*engine: oxygen-gtk;*/
+	/*engine: xfce;*/
+}
+/*
+*:selected {
+	color: @text_focused;
+	background-color: @bg_focused;
+}
+
+*:hover {
+	color: @text_focused;
+	background-color: @bg_focused;
+}*/
+
+/**:insensitive {
+	color: @text_insensitive;
+}*/
+
+/*
+*:active {
+	border-style: inset;
+}*/
+
+.background {
+	/* Members: GtkWindow. */
+	color: @text_normal;
+	background-color: @widgets_bg;
+}
+
+.accelerator {
+	/* Members: GtkAccelLabel. */
+}
+
+GtkLabel:insensitive {
+	color: @text_insensitive;
+}
+
+.frame {
+	/* Members: GtkFrame. */
+	color: @text_normal;
+	/*background-color: @container_bg;*/
+	border-width: 1px;
+	border-style: dotted;
+	border-color: black;
+}
+
+.frame .entry:selected {
+	/* Members: GtkFrame. */
+	/*color: @text_focused;
+	background-color: @bg_focused;*/
+}
+
+.radio {
+	/* Members: GtkCellRendererToggle, GtkRadioMenuItem, GtkRadioButton. */
+}
+
+.calendar {
+	/* Members: GtkCalendar. */
+}
+
+.check {
+	/* Members: GtkCheckMenuItem, GtkCellRendererToggle, GtkCheckButton. */
+}
+
+.menubar {
+	/* Members: GtkMenuBar. */
+}
+
+.spinner {
+	/* Members: GtkSpinner. */
+}
+
+.menu {
+	/* Members: GtkCheckMenuItem, GtkRadioMenuItem, GtkMenu, GtkMenuItem. */
+}
+
+.tooltip, .floating-bar, .app-notification {
+	/* Members: GtkTooltip. */
+	background-color: @tooltips_bg;
+	color: @tooltips_text;
+}
+
+.cell {
+	/* Members: GtkCellRendererToggle. */
+}
+
+.viewport {
+	/* Members: GtkViewport. */
+}
+
+.grip {
+	/* Members: GtkWindow. */
+}
+
+.popup {
+	/* Members: GtkMenu. */
+	background-color: @test_red;
+	color: @test_blue;
+}
+
+.scrolled-window {
+	/* Members: GtkScrolledWindow. */
+}
+
+
+
+
+
+.slider {
+	/* Members: GtkScale, GtkScrollbar. */
+	background-color: @scrollbar;
+	border-color: @buttonshadow;
+	border-width: 2px;
+	border-style: outset;
+}
+
+.slider:insensitive {
+	background-color: shade(@scrollbar, 1.2);
+}
+
+.notebook {
+	/* Members: GtkNotebook. */
+}
+
+.trough {
+	/* Members: GtkProgressBar, GtkScale, GtkScrollbar. */
+	background-color: @scrollbar_bg;
+}
+
+.trough:insensitive {
+	background-color: shade(@scrollbar_bg, 0.8);
+}
+
+.trough:selected {
+	background-color: @scrollbar_bg;
+}
+
+.trough.highlight {
+	background-color: @bg_focused;
+}
+
+
+.trough.highlight:insensitive {
+	background-color: shade(@bg_focused, 0.8);
+}
+
+.progressbar {
+	/* Members: GtkProgressBar, GtkCellRendererProgress. */
+	/*background-color: @bg_focused;*/
+	/*background-color: @test_green;*/
+	/*background-color: @test_red;*/
+	background-color: @bg_focused;
+	color: @test_blue;
+}
+
+.progressbar:selected {
+	background-color: @widgets_bg;
+	color: @test_red;
+}
+
+/*
+.scrollbar.button {
+	background-color: @test_blue;
+	color: @test_red;
+}
+
+.scrollbar.slider {
+	background-color: @test_red;
+	color: @test_green;
+}
+
+.scrollbar.trough {
+	background-color: @test_green;
+	color: @test_blue;
+	margin: 3px;
+	border-width: 2px;
+	border-style: dotted;
+	border-color: test_red;
+}*/
+
+
+
+
+.toolbar {
+	/* Members: GtkToolbar. */
+}
+
+.toolbar .button:checked {
+	/*border-radius: 10px;*/
+	background-color: @bg_focused;
+	color: @text_focused;
+}
+
+/*.toolbar .button:hover GtkLabel {
+	font: Bold;
+	margin: 10px;
+	border-width: 10px;
+	border-style: outset;
+	border-color: @test_blue;
+	padding: 10px;
+}*/
+
+
+.pane-separator {
+	background-color: darker(@widgets_bg);
+}
+
+
+.dock {
+	/* Members: GtkHandleBox. */
+}
+
+.button {
+	/* Members: GtkCheckButton, GtkRadioButton, GtkButton, GtkToggleButton. */
+
+	color: @text_normal;
+	background-color: @widgets_bg;
+
+	border-color: @buttonshadow;
+	border-width: 2px;
+	border-style: outset;
+
+    /*-GtkWidget-focus-padding: 1;
+    -GtkWidget-focus-line-width: 0;
+    padding: 2px 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;*/
+
+}
+
+.button:insensitive {
+	color: @text_insensitive;
+}
+
+.button:checked,
+.button:active
+/*.button:selected,
+.button:hover,
+.button:focused,
+.button:inconsistent*/ {
+	/*color: @test_green;
+	background-color: @test_red;
+	border-color: @test_blue;
+	border-width: 2px;*/
+	border-style: inset;
+}
+
+.arrow {
+	/* Members: GtkArrow. */
+}
+
+
+
+.menuitem {
+	/* Members: GtkMenuItem. */
+}
+
+/*
+.menuitem.button {
+	background-color: @test_green;
+	color: @test_blue;
+	border-width: 2px;
+	border-style: outset;
+	border-color: @test_red;
+
+}
+
+.menuitem.button GtkLabel {
+	border-width: 2px;
+	border-style: outset;
+	border-color: @test_blue;
+	margin: 10px;
+	padding: 10px;
+	font: Sans, 20;
+}*/
+
+
+.menuitem.button:hover {
+	background-color: @bg_focused;
+	color: @text_focused;
+
+}
+
+
+
+.entry {
+	/* Members: GtkEntry. */
+	color: @text_normal;
+	background-color: @container_bg;
+}
+
+.entry:selected {
+	color: @text_focused;
+	background-color: @bg_focused;
+}
+
+.entry:insensitive {
+	color: @text_insensitive;
+	background-color: @widgets_bg;
+}
+
+.expander {
+	/* Members: GtkExpander. */
+}
+
+.scale.progressbar {
+	background-color: @test_green;
+}
+
+/*
+ * Imports for widget-specific theming.
+ */
+
+@import url("widgets/gtkwindow.css");
+@import url("widgets/gtkswitch.css");
+@import url("widgets/gtkscrollbar.css");
+@import url("widgets/gtkcalendar.css");
+@import url("widgets/gtkcombobox.css");
+@import url("widgets/gtkwidget.css");
+@import url("widgets/gtknotebook.css");
+@import url("widgets/gtkmessagedialog.css");
+@import url("widgets/gtktreeview.css");
+@import url("widgets/gtkcheckmenuitem.css");
+@import url("widgets/gtkprogressbar.css");
+@import url("widgets/gtkscale.css");
+@import url("widgets/gtkbuttonbox.css");
+@import url("widgets/gtkinfobar.css");
+@import url("widgets/gtkscrolledwindow.css");
+@import url("widgets/gtkrange.css");
+@import url("widgets/gtkdialog.css");
+@import url("widgets/gtktoolbutton.css");
+@import url("widgets/gtkiconview.css");
+@import url("widgets/gtkmenu.css");
+@import url("widgets/gtkmenuitem.css");
+@import url("widgets/gtkspinbutton.css");
+@import url("widgets/gtktoolbar.css");
+@import url("widgets/gtkcheckbutton.css");
+@import url("widgets/gtkpaned.css");
+@import url("widgets/gtktoolitemgroup.css");
+@import url("widgets/gtkarrow.css");
+@import url("widgets/gtkassistant.css");
+@import url("widgets/gtktextview.css");
+@import url("widgets/gtkexpander.css");
+@import url("widgets/gtkmenubar.css");
+@import url("widgets/gtkentry.css");
+@import url("widgets/gtkbutton.css");
+@import url("widgets/gtkstatusbar.css");
+
+
+/*.toolbar .button .cell {
+	border-radius: 10px;
+	background-color: @test_red;
+	color: @test_blue;
+}*/
+
+/*.notebook.frame {
+	background-color: @test_blue;
+	color: @test_blue;
+}
+
+.notebook.header {
+	background-color: @test_red;
+	color: @test_blue;
+}*/
+
+/*.notebook tab.right {
+	background-color: @test_red;
+	color: @test_blue;
+}*/
+
+/*.inline-toolbar.toolbar {
+	background-color: @test_red;
+	color: @test_blue;
+}*/
+
+GtkCheckButton {
+
+	color: @text_normal;
+
+	border-width: 2px;
+	border-style: solid;
+	border-color: @buttonshadow;
+
+}
+
+
+

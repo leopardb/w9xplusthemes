@@ -1,0 +1,68 @@
+
+style "GtkButton"
+{
+######	Style Properties
+
+	## How far in the x/y direction to move the child when the button is depressed. (gint)
+
+		#GtkButton::child-displacement-x = 0
+		#GtkButton::child-displacement-y = 0
+
+	## Whether the child_displacement_x/child_displacement_y properties should also affect the focus rectangle. (gboolean)
+
+		#GtkButton::displace-focus = 0
+
+	## The "default-border" style property defines the extra space to add around a button that can become the default widget of its window. (GtkBorder*)
+	## The "default-outside-border" style property defines the extra outside space to add around a button that can become the default widget of its window. (GtkBorder*)
+	## The "inner-border" style property sets the border between the button edges and child. (GtkBorder*)
+	## The "image-spacing" style property sets the spacing in pixels between the image and label. (gint)
+
+		#GtkButton::default-border = { 0, 0, 0, 0 }
+		#GtkButton::default-outside-border = { 0, 0, 0, 0 }
+		#GtkButton::inner-border = { 0, 0, 0, 0 }
+		#GtkButton::image-spacing = 2
+
+	## Size of check or radio indicator. (gint)
+	## Spacing around check or radio indicator. (gint)
+
+		#GtkCheckButton::indicator-size = 13
+		#GtkCheckButton::indicator-spacing = 2
+		#GtkRadioButton::indicator-size = 13
+		#GtkRadioButton::indicator-spacing = 2
+
+	## Size of dropdown indicator. (GtkRequisition*)
+	## Spacing around indicator. (GtkBorder*)
+
+		#GtkOptionMenu::indicator-size = { 0, 0 }
+		#GtkOptionMenu::indicator-spacing = { 0, 0, 0, 0 }
+
+######	Colors
+
+	fg[NORMAL]		= @text_normal	# button's label
+	fg[PRELIGHT]		= @text_normal
+	fg[SELECTED]		= @test_fg
+	fg[ACTIVE]		= @text_normal	# when pressed
+	fg[INSENSITIVE]		= @text_normal
+
+	bg[NORMAL]		= @widgets_bg	# button's bg
+	bg[PRELIGHT]		= @widgets_bg
+	bg[SELECTED]		= @test_bg
+	bg[ACTIVE]		= @widgets_bg	# when pressed
+	bg[INSENSITIVE]		= @widgets_bg
+
+	text[NORMAL]		= @text_normal	# google chrome
+	text[PRELIGHT]		= @text_normal	# google chrome
+	text[SELECTED]		= @test_text
+	text[ACTIVE]		= @test_text
+	text[INSENSITIVE]	= @text_normal	# google chrome (shortcut keys in menus)
+
+#	base[NORMAL]		= @test_color	# checkbox bg
+	base[ACTIVE]		= @test_base
+	base[PRELIGHT]		= @test_base
+	base[SELECTED]		= @test_base
+	base[INSENSITIVE]	= @test_base
+
+}
+
+class "GtkButton" style "GtkButton"
+widget_class "*GtkButton*.GtkLabel" style "GtkButton"

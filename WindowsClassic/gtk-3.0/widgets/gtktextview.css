@@ -1,0 +1,17 @@
+GtkTextView {
+	/**
+	* Style properties inheritance:
+	*  GtkTextView->GtkContainer->GtkWidget.
+	*/
+
+	/* Color with which to draw error-indication underlines. */
+	/* error-underline-color: ; */ /* GdkColor */
+
+	background-color: @container_bg;
+	color: @text_normal;
+}
+
+GtkTextView:selected {
+	background-color: @bg_focused;
+	color: @text_focused;
+}

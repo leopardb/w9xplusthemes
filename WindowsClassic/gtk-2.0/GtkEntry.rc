@@ -1,0 +1,38 @@
+
+style "GtkEntry"
+{
+######	Style Properties
+
+	GtkEntry	::icon-prelight = 1	# gboolean	(The prelight style property determines whether activatable icons prelight on mouseover.)
+#	GtkEntry	::inner-border = 1	# GtkBorder*	(Sets the text area's border between the text and the frame.)
+	GtkEntry	::invisible-char = 0	# guint	(The invisible character is used when masking entry contents (in \"password mode\")").)
+#	GtkEntry	::progress-border = 1	# GtkBorder*	(The border around the progress bar in the entry.)
+
+######	Colors
+
+	fg[NORMAL]		= @text_normal	# scrollbox arrows
+	fg[PRELIGHT]		= @test_fg	# ?
+	fg[SELECTED]		= @test_fg	# ?
+	fg[ACTIVE]		= @test_fg	# ?
+	fg[INSENSITIVE]		= @text_normal	# scrollbox arrows
+
+	bg[NORMAL]		= @container_bg	# container's bg
+	bg[PRELIGHT]		= @test_bg	# ?
+	bg[SELECTED]		= @widgets_bg	# google chrome
+	bg[ACTIVE]		= @test_bg	# ?
+	bg[INSENSITIVE]		= @container_bg	# container's bg
+
+	text[NORMAL]		= @text_normal	# text
+	text[PRELIGHT]		= @test_text	# ?
+	text[SELECTED]		= @text_focused	# text
+	text[ACTIVE]		= @text_focused	# text
+	text[INSENSITIVE]	= @text_normal	# text
+
+	base[NORMAL]		= @container_bg	# text's bg
+	base[PRELIGHT]		= @test_base	# ?
+	base[SELECTED]		= @bg_focused	# text's bg
+	base[ACTIVE]		= @bg_focused	# text's bg
+	base[INSENSITIVE]	= @container_bg	# text's bg
+}
+
+class "GtkEntry"    style "GtkEntry"

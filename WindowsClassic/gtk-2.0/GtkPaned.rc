@@ -1,0 +1,23 @@
+
+style "GtkPaned"
+{
+######	Style Properties
+
+	GtkPaned       ::handle-size		= 5 	# gint (Width of handle.)
+
+######	Colors
+
+	bg[NORMAL]		= @widgets_bg
+	bg[PRELIGHT]		= @widgets_bg
+}
+
+class "GtkPaned" style "GtkPaned"
+
+
+
+
+
+
+
+
+

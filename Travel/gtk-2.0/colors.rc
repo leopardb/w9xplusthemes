@@ -1,0 +1,31 @@
+
+
+gtk-theme-name = "Travel"
+gtk-icon-theme-name = "Travel"
+#gtk-enable-tooltips = 0
+
+
+gtk_color_scheme = "text_normal:#000000"		# (WindowText=0 0 0)
+gtk_color_scheme = "text_focused:#E0E0D8"		# (HilightText=224 224 216)
+gtk_color_scheme = "text_insensitive:#605848"		# (GrayText=96 88 72)
+gtk_color_scheme = "bg_focused:#486050"			# (Hilight=72 96 80)
+gtk_color_scheme = "widgets_bg:#908070"			# (Menu=144 128 112)
+
+gtk_color_scheme = "scrollbar:#908070"			# (Menu=144 128 112)
+gtk_color_scheme = "scrollbar_bg:#C8C0B8"		# (Scrollbar=200 192 184)
+gtk_color_scheme = "stepper:black"
+gtk_color_scheme = "expander:black"
+
+gtk_color_scheme = "container_bg:#D8D0C8"		# (Window=216 208 200)
+
+gtk_color_scheme = "titlebar_text:#E0E0D8"		# (TitleText=224 224 216)
+gtk_color_scheme = "titlebar_bg:#404878"		# (ActiveTitle=64 72 120)
+gtk_color_scheme = "titlebar_text_inactive:#908070"	# (InactiveTitleText=144 128 112)
+gtk_color_scheme = "titlebar_bg_inactive:#605848"	# (InactiveTitle=96 88 72)
+
+gtk_color_scheme = "desktop_icon_text:white"
+gtk_color_scheme = "desktop_icon_text_selected:white"
+gtk_color_scheme = "desktop_icon_text_active:white"
+
+gtk_color_scheme = "tooltips_text:#404878"		# (InfoText=64 72 120)
+gtk_color_scheme = "tooltips_bg:#FFFFFF"		# (InfoWindow=255 255 255)

@@ -1,0 +1,144 @@
+
+
+
+include "colors.rc"
+
+
+gtk_color_scheme = "test_color:red\ntest_fg:red\ntest_bg:blue\ntest_text:yellow\ntest_base:green\n"
+
+
+##########################
+# GENERAL THEME SETTINGS 
+##########################
+
+style "GtkWidget"
+{
+	#font_name = "Microsoft Sans Serif 20"
+	#font_name = "Arial"
+
+	xthickness = 1
+	ythickness = 1
+
+	#xthickness = 15
+	#ythickness = 5
+
+	GtkWidget	::cursor-aspect-ratio = 0.04		# gfloat	(Aspect ratio with which to draw insertion cursor.)
+#	GtkWidget	::cursor-color = "red"			# GdkColor*	(Color with which to draw insertion cursor.) (blinking text cursor)
+#	GtkWidget	::secondary-cursor-color = "red"	# GdkColor*	(Color with which to draw the secondary insertion cursor when editing mixed right-to-left and left-to-right text.)
+
+	GtkWidget	::focus-line-pattern = "\001\001"	# gchar*	(Dash pattern used to draw the focus indicator.)
+	GtkWidget	::focus-line-width = 1			# gint		(Width, in pixels, of the focus indicator line.)
+	GtkWidget	::focus-padding = 1			# gint		(Width, in pixels, between focus indicator and the widget 'box'.)
+	GtkWidget	::interior-focus = 1			# gboolean	(Whether to draw the focus indicator inside widgets.)
+
+#	GtkWidget	::link-color = "red"			# GdkColor*	(The "link-color" style property defines the color of unvisited links.)
+#	GtkWidget	::visited-link-color = "red"		# GdkColor*	(The "visited-link-color" style property defines the color of visited links.)
+
+	GtkWidget	::scroll-arrow-hlength = 16		# gint		(The "scroll-arrow-hlength" style property defines the length of horizontal scroll arrows.)
+	GtkWidget	::scroll-arrow-vlength = 16		# gint		(The "scroll-arrow-vlength" style property defines the length of vertical scroll arrows.)
+
+	GtkWidget	::wide-separators = 0		# gboolean	(The "wide-separators" style property defines whether separators have configurable width and should be drawn using a box instead of a line.)
+	GtkWidget	::separator-height = 0		# gint		(The "separator-height" style property defines the height of separators. This property only takes effect if "wide-separators" is TRUE.)
+	GtkWidget	::separator-width = 0		# gint		(The "separator-width" style property defines the width of separators. This property only takes effect if "wide-separators" is TRUE.)
+
+	GtkWidget	::tooltip-alpha = 255			# guchar	(The "tooltip-alpha" style property defines the opacity of widget tooltips.)
+	GtkWidget	::tooltip-radius = 0			# guint		(The "tooltip-radius" style property defines the radius of widget tooltips.)
+
+
+#	WnckTasklist   ::fade-overlay-rect	= 0
+
+
+
+	GtkScrolledWindow	::scrollbar-spacing = 0		# gint (Number of pixels between the scrollbars and the scrolled window.)
+	GtkScrolledWindow	::scrollbars-within-bevel = 0	# gboolean (Whether to place scrollbars within the scrolled window's bevel.)
+
+	GtkEntry		::honors-transparent-bg-hint	= 1
+
+	#PangoFontDescription *font_desc;
+
+	fg[NORMAL]        = @text_normal
+	fg[PRELIGHT]      = @text_focused
+	fg[SELECTED]      = @text_focused
+	fg[ACTIVE]        = @text_normal
+	fg[INSENSITIVE]   = @text_normal
+
+	bg[NORMAL]        = @widgets_bg
+	bg[PRELIGHT]      = shade (1.02, @bg_focused)
+	bg[SELECTED]	  = @bg_focused  		# Color for selected items.
+	bg[ACTIVE]        = shade (0.90, @widgets_bg)
+	bg[INSENSITIVE]   = @widgets_bg
+
+	text[NORMAL]      = @text_normal
+	text[PRELIGHT]    = @text_focused
+	text[SELECTED]    = @text_focused
+	text[ACTIVE]      = @text_focused
+	text[INSENSITIVE] = darker (@widgets_bg)
+
+	base[NORMAL]      = @container_bg
+	base[ACTIVE]      = shade (0.90, @widgets_bg)
+	base[PRELIGHT]    = shade (0.95, @bg_focused)
+	base[SELECTED]    = @bg_focused  # Color for selected items.
+	base[INSENSITIVE] = @widgets_bg
+
+	engine "redmond95" {}
+}
+
+class "*"    style "GtkWidget"
+
+
+
+include "../../WindowsClassic/gtk-2.0/GtkWindow.rc"
+include "../../WindowsClassic/gtk-2.0/GtkPaned.rc"
+include "../../WindowsClassic/gtk-2.0/GtkButton.rc"
+
+include "../../WindowsClassic/gtk-2.0/GtkMenu.rc"
+include "../../WindowsClassic/gtk-2.0/GtkToolbar.rc"
+include "../../WindowsClassic/gtk-2.0/GtkEntry.rc"
+
+include "../../WindowsClassic/gtk-2.0/GtkIconView.rc"
+
+
+include "../../WindowsClassic/gtk-2.0/GtkTreeView.rc"
+include "../../WindowsClassic/gtk-2.0/GtkScrollbar.rc"
+include "../../WindowsClassic/gtk-2.0/GtkNotebook.rc"
+include "../../WindowsClassic/gtk-2.0/GtkTextView.rc"
+
+
+style "gtk-tooltip"
+{
+	xthickness = 4
+        ythickness = 4
+
+	fg[NORMAL]		= @tooltips_text	
+	bg[NORMAL]		= @tooltips_bg
+
+}
+
+widget "*gtk-tooltip*" style "gtk-tooltip"
+
+
+include "../../WindowsClassic/gtk-2.0/applications/applications.rc"
+
+
+include "theme_specific.rc"
+
+
+
+# do not comment out, but comment stuff inside test.rc, 
+# normally all widgets/classes lines should be commented out in test.rc
+
+include "../../WindowsClassic/gtk-2.0/test.rc"
+
+
+
+
+
+#########################################
+# Check later ...
+#########################################
+
+
+
+# GtkWidget -> Style Properties
+# panels
+#GtkStatusIcon

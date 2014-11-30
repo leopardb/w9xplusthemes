@@ -1,0 +1,49 @@
+style "GtkTreeView"
+{
+######	Style Properties
+
+	GtkTreeView::allow-rules		= 0								# gboolean	(Allow drawing of alternating color rows.)
+#	GtkTreeView::even-row-color		= @test_color							# GdkColor*	(Color to use for even rows.)
+#	GtkTreeView::odd_row_color		= mix(0.98, shade (0.93,@base_color), @selected_bg_color) 	# GdkColor*	(Color to use for odd rows.)
+	GtkTreeView::expander-size		= 12								# gint		(Size of the expander arrow.)
+
+	GtkTreeView::indent-expanders		= 1								# gboolean	(Make the expanders indented.)
+
+	GtkTreeView::horizontal-separator	= 2								# gint		(Horizontal space between cells. Must be an even number.)
+	GtkTreeView::vertical-separator		= 2								# gint		(Vertical space between cells. Must be an even number.)
+
+# Following stuff only works it the "enable-tree-lines" property was set to TRUE (default:FALSE) by the programmer
+	GtkTreeView::grid-line-pattern		= "\001\001"							# gchar*	(Dash pattern used to draw the tree view grid lines.)
+	GtkTreeView::grid-line-width		= 1								# gint		(Width, in pixels, of the tree view grid lines.)
+	GtkTreeView::tree-line-pattern		= "\001\001"							# gchar*	(Dash pattern used to draw the tree view lines.)
+	GtkTreeView::tree-line-width		= 1								# gint		(Width, in pixels, of the tree view lines.)
+
+######	Colors
+
+	fg[NORMAL]		= @expander		# color of the expanders (arrows) in tree view
+	fg[PRELIGHT]		= @expander		# color of the expanders (arrows) in tree view
+	fg[SELECTED]		= @bg_focused		# focus-line around items (see GtkWidget::focus-line-pattern)
+	fg[ACTIVE]		= @test_fg
+	fg[INSENSITIVE]		= @test_fg
+
+	bg[NORMAL]		= @container_bg		# google chrome favorites tree
+	bg[PRELIGHT]		= @test_bg
+	bg[SELECTED]		= @bg_focused		# item's background when focused, in the sorted column (detailed view)
+	bg[ACTIVE]		= @test_bg
+	bg[INSENSITIVE]		= @test_bg
+
+	text[NORMAL]		= @text_normal		# items text color (both views)
+	text[PRELIGHT]		= @test_text
+	text[SELECTED]		= @text_focused		# item's text when focused (both views)
+	text[ACTIVE]		= @text_normal		# item's text when selected but not focused (both views)
+	text[INSENSITIVE]	= @test_text
+
+	base[NORMAL]		= @container_bg		# widget background color (both views)
+	base[ACTIVE]		= @widgets_bg		# item's background when selected but not focused (both views)
+	base[PRELIGHT]		= @test_base
+	base[SELECTED]		= @bg_focused		# item's background when focused (both views) except in sorted column (detailed view)
+	base[INSENSITIVE]	= @test_base
+}
+
+class "GtkTreeView" style "GtkTreeView"
+

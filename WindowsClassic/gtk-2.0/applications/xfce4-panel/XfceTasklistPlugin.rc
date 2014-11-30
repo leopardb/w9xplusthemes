@@ -1,0 +1,76 @@
+#######################################################################
+##
+##	"tasklist-widget" aka "Window Buttons" aka "XfceTasklistPlugin"
+##
+#######################################################################
+
+
+style "XfceTasklistPlugin"
+{
+######	Style Properties
+
+	## The min/max length of a button before the label ellipsizes.
+	## When this value is set to -1 the button will expand to the
+	## entire available space.
+
+		#XfceTasklist::min-button-length = 20
+	  	#XfceTasklist::max-button-length = 100
+
+	 ## Maximum Button height
+
+		#XfceTasklist::max-button-size = 25
+
+	## Maximum number of characters in the menu label before it will be ellipsized.
+
+		#XfceTasklist::menu-max-width-chars = 24
+
+	## Ellipsizing used in the task list and overflow menu labels.
+
+		#XfceTasklist::ellipsize-mode = PANGO_ELLIPSIZE_END
+
+	## Lucency of minimized icons. Valid values are between 0 (completely hide the icon) and 100 (don't lighten the icon).
+
+		#XfceTasklist::minimized-icon-lucency = 50
+
+	## ??
+		#XfceTasklist::menu_icon_size = 8
+
+	/*GtkButton::child-displacement-x = 0
+	GtkButton::child-displacement-y = 0
+	GtkButton::displace-focus = 0
+
+	GtkButton::default-border = {0,0,0,0}
+	GtkButton::default-outside-border = {0,0,0,0}
+	GtkButton::inner-border = {0,0,0,0}
+	GtkButton::image-spacing = 0*/
+
+######	Colors
+
+	fg[NORMAL]		= @text_normal
+	fg[PRELIGHT]		= @text_normal
+	fg[SELECTED]		= @test_fg
+	fg[ACTIVE]		= @text_normal
+	fg[INSENSITIVE]		= @test_fg
+
+	bg[NORMAL]		= @widgets_bg
+	bg[PRELIGHT]		= @widgets_bg
+	bg[SELECTED]		= @test_bg
+	bg[ACTIVE]		= @widgets_bg
+	bg[INSENSITIVE]		= @test_bg
+
+	text[NORMAL]		= @test_text
+	text[PRELIGHT]		= @test_text
+	text[SELECTED]		= @test_text
+	text[ACTIVE]		= @test_text
+	text[INSENSITIVE]	= @test_text
+
+	base[NORMAL]		= @test_base
+	base[ACTIVE]		= @test_base
+	base[PRELIGHT]		= @test_base
+	base[SELECTED]		= @test_base
+	base[INSENSITIVE]	= @test_base
+
+}
+
+widget_class "XfcePanelWindow.PanelItembar.XfceTasklistPlugin.XfceHVBox.GtkAlignment*" style "XfceTasklistPlugin"
+widget_class "XfcePanelWindow.PanelItembar.XfceTasklistPlugin.XfceHVBox.XfceTasklist.XfceArrowButton*" style "XfceTasklistPlugin"

@@ -1,0 +1,6 @@
+
+
+include "xfce4-panel/xfce4-panel.rc"
+include "Thunar/Thunar.rc"
+include "VirtualBox/VirtualBox.rc"
+include "Chrome/ChromeGtkFrame.rc"

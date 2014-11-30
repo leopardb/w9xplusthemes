@@ -1,0 +1,23 @@
+
+style "GeneralFont"
+{
+	font_name = "Tempus Sans ITC, 8"
+}
+
+class "*" style "GeneralFont"
+
+
+style "PanelFont"
+{
+	font_name = "Matisse ITC, 12"
+}
+
+widget_class "XfcePanelWindow.PanelItembar*" style "PanelFont"
+
+
+style "StartButtonFont"
+{
+	font_name = "Matisse ITC, Bold 12"
+}
+
+widget_class "XfcePanelWindow.PanelItembar.XfceApplicationsMenuPlugin.GtkToggleButton.XfceHVBox.GtkLabel" style "StartButtonFont"

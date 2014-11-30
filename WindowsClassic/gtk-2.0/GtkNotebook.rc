@@ -1,0 +1,62 @@
+
+style "GtkNotebook"
+{
+######	Style Properties
+
+	## The "arrow-spacing" property defines the spacing between the scroll arrows and the tabs. (gint)
+
+		#GtkNotebook::arrow-spacing = 0
+
+	## The "has-backward-stepper" property determines whether the standard backward arrow button is displayed. (gboolean)
+
+		#GtkNotebook::has-backward-stepper = 1
+
+	## The "has-forward-stepper" property determines whether the standard forward arrow button is displayed. (gboolean)
+
+		#GtkNotebook::has-forward-stepper = 1
+
+	## The "has-secondary-backward-stepper" property determines whether a second backward arrow button is displayed on the opposite end of the tab area. (gboolean)
+
+		#GtkNotebook::has-secondary-backward-stepper = 0
+
+	## The "has-secondary-forward-stepper" property determines whether a second forward arrow button is displayed on the opposite end of the tab area. (gboolean)
+
+		#GtkNotebook::has-secondary-forward-stepper = 0
+
+	## The "tab-curvature" property defines size of tab curvature. (gint)
+
+		#GtkNotebook::tab-curvature = 1
+
+	## The "tab-overlap" property defines size of tab overlap area. (gint)
+
+		#GtkNotebook::tab-overlap = 2
+
+######	Colors
+
+	fg[NORMAL]		= @text_normal
+	fg[PRELIGHT]		= @test_fg
+	fg[SELECTED]		= @test_fg
+	fg[ACTIVE]		= @text_normal
+	fg[INSENSITIVE]		= @test_fg
+
+	bg[NORMAL]		= @widgets_bg	# curent tab
+	bg[PRELIGHT]		= @test_bg
+	bg[SELECTED]		= @test_bg
+	bg[ACTIVE]		= @widgets_bg	# other tabs
+	bg[INSENSITIVE]		= @test_bg
+
+	text[NORMAL]		= @test_text
+	text[PRELIGHT]		= @test_text
+	text[SELECTED]		= @test_text
+	text[ACTIVE]		= @test_text
+	text[INSENSITIVE]	= @test_text
+
+	base[NORMAL]		= @test_base
+	base[ACTIVE]		= @test_base
+	base[PRELIGHT]		= @test_base
+	base[SELECTED]		= @test_base
+	base[INSENSITIVE]	= @test_base
+}
+
+class "GtkNotebook" style "GtkNotebook"
+

@@ -1,0 +1,23 @@
+
+style "GeneralFont"
+{
+	font_name = "Copperplate Gothic Light, 9"
+}
+
+class "*" style "GeneralFont"
+
+
+style "PanelFont"
+{
+	font_name = "Copperplate Gothic Bold, 11"
+}
+
+widget_class "XfcePanelWindow.PanelItembar*" style "PanelFont"
+
+
+style "StartButtonFont"
+{
+	font_name = "Copperplate Gothic Bold, Bold 11"
+}
+
+widget_class "XfcePanelWindow.PanelItembar.XfceApplicationsMenuPlugin.GtkToggleButton.XfceHVBox.GtkLabel" style "StartButtonFont"

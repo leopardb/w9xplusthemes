@@ -1,0 +1,85 @@
+
+style "test"
+{
+######	Style Properties
+
+	#xthickness = 0
+	#ythickness = 0
+
+######	Colors
+
+	fg[NORMAL]		= @test_fg
+	fg[PRELIGHT]		= @test_fg
+	fg[SELECTED]		= @test_fg
+	fg[ACTIVE]		= @test_fg
+	fg[INSENSITIVE]		= @test_fg
+
+	bg[NORMAL]		= @test_bg
+	bg[PRELIGHT]		= @test_bg
+	bg[SELECTED]		= @test_bg
+	bg[ACTIVE]		= @test_bg
+	bg[INSENSITIVE]		= @test_bg
+
+	text[NORMAL]		= @test_text
+	text[PRELIGHT]		= @test_text
+	text[SELECTED]		= @test_text
+	text[ACTIVE]		= @test_text
+	text[INSENSITIVE]	= @test_text
+
+	base[NORMAL]		= @test_base
+	base[ACTIVE]		= @test_base
+	base[PRELIGHT]		= @test_base
+	base[SELECTED]		= @test_base
+	base[INSENSITIVE]	= @test_base
+
+	/*engine "xfce"
+	{
+		smooth_edge = false
+		boxfill
+		{
+			fill_style = plain
+		}
+	}*/
+
+}
+
+#widget_class "*GtkMenu*MenuItem*abel*"    style "test"
+
+#widget "*irtual*"    style "test"
+
+
+
+#class "GtkMenuBar"    style "test"
+
+#class "*"    style "test"
+#widget_class "*"    style "test"
+
+
+#widget_class "*ChromeGtkFrame*"    style "test"
+
+
+
+# widget styles
+#class "GtkWidget"      style "test"
+#class "GtkButton"      style "test"
+#class "GtkScale"       style "test"
+#class "GtkCombo"       style "test"
+#class "GtkRange"       style "test"
+#class "GtkFrame"       style "test"
+#class "GtkMenu"        style "test"
+#class "GtkEntry"       style "test"
+#class "GtkMenuItem"    style "test"
+#class "GtkNotebook"    style "test"
+#class "GtkProgressBar" style "test"
+#class "GtkScrollbar"   style "test"
+#class "*MenuBar*"      style "test"
+
+
+
+#widget "*gtk-tooltip*" style "test"
+
+
+
+
+
+

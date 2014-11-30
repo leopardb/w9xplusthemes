@@ -1,0 +1,23 @@
+
+style "GeneralFont"
+{
+	font_name = "OCR A Extended, 8"
+}
+
+class "*" style "GeneralFont"
+
+
+style "PanelFont"
+{
+	font_name = "Westminster, 12"
+}
+
+widget_class "XfcePanelWindow.PanelItembar*" style "PanelFont"
+
+
+style "StartButtonFont"
+{
+	font_name = "Westminster, Bold 12"
+}
+
+widget_class "XfcePanelWindow.PanelItembar.XfceApplicationsMenuPlugin.GtkToggleButton.XfceHVBox.GtkLabel" style "StartButtonFont"

@@ -1,0 +1,166 @@
+
+
+
+style "XfcePanelWindow"
+{
+######	Style Properties
+
+	## Time in miliseconds before the panel will unhide on an enter event
+
+		#XfcePanelWindow::popup-delay = 225
+
+	## Time in miliseconds before the panel will hide on a leave event
+
+		#XfcePanelWindow::popdown-delay = 350
+
+	## Size of autohide window in pixels
+
+		#XfcePanelWindow::autohide-size = 3
+
+######	Colors
+
+	fg[NORMAL]		= @test_fg
+	fg[PRELIGHT]		= @test_fg
+	fg[SELECTED]		= @test_fg
+	fg[ACTIVE]		= @test_fg
+	fg[INSENSITIVE]		= @test_fg
+
+	bg[NORMAL]		= @widgets_bg
+	bg[PRELIGHT]		= @test_bg
+	bg[SELECTED]		= @test_bg
+	bg[ACTIVE]		= @test_bg
+	bg[INSENSITIVE]		= @test_bg
+
+	text[NORMAL]		= @test_text
+	text[PRELIGHT]		= @test_text
+	text[SELECTED]		= @test_text
+	text[ACTIVE]		= @test_text
+	text[INSENSITIVE]	= @test_text
+
+	base[NORMAL]		= @test_base
+	base[ACTIVE]		= @test_base
+	base[PRELIGHT]		= @test_base
+	base[SELECTED]		= @test_base
+	base[INSENSITIVE]	= @test_base
+}
+
+class "XfcePanelWindow" style "XfcePanelWindow"
+#widget_class "XfcePanelWindow*" style "XfcePanelWindow"
+
+
+include "XfceLauncherPlugin.rc"
+include "XfceTasklistPlugin.rc"
+
+
+
+
+
+style "tmp"
+{
+######	Style Properties
+
+
+	#xthickness = 0
+	#ythickness = 0
+
+
+
+######	Colors
+
+	fg[NORMAL]		= @test_color	
+	bg[NORMAL]		= @test_color	
+	text[NORMAL]		= @test_color	
+	base[NORMAL]		= @test_color	
+
+	fg[ACTIVE]		= @test_color
+	bg[ACTIVE]		= @test_color	
+	text[ACTIVE]		= @test_color
+	base[ACTIVE]		= @test_color
+
+	fg[PRELIGHT]		= @test_color
+	bg[PRELIGHT]		= @test_color
+	text[PRELIGHT]		= @test_color	
+	base[PRELIGHT]		= @test_color	
+
+	fg[SELECTED]		= @test_color	
+	bg[SELECTED]		= @test_color	
+	text[SELECTED]		= @test_color
+	base[SELECTED]		= @test_color
+
+	fg[INSENSITIVE]		= @test_color	
+	bg[INSENSITIVE]		= @test_color	
+	text[INSENSITIVE]	= @test_color
+	base[INSENSITIVE]	= @test_color
+}
+
+
+
+##	Path :
+##	widget_class "XfcePanelWindow.PanelItembar.XfceTasklistPlugin.XfceHVBox.GtkAlignment" style "XfceTasklistChild"
+##
+##	widget_class "XfcePanelWindow.PanelItembar.XfceTasklistPlugin.XfceHVBox.XfceTasklist.XfceArrowButton" style "XfceTasklistChild"
+##	widget_class "XfcePanelWindow.PanelItembar.XfceTasklistPlugin.XfceHVBox.XfceTasklist.XfceArrowButton.XfceHVBox.GtkLabel" style "XfceTasklistChild"
+##
+##	widget_class "XfcePanelWindow.PanelItembar.XfceLauncherPlugin.XfceHVBox.GtkButton" style "XfcePanelWindow"
+
+#widget_class "XfcePanelWindow.PanelItembar.XfceApplicationsMenuPlugin*" style "tmp"
+
+
+/*
+
+
+	undrline wrote:
+	Xfce Version: 4.10
+	Your Distribution and Version: XUbuntu 12.04.2
+	Trying to create a .gtkrc-2.0 to modify some fonts.  The Action Buttons (which I have set to Session Menu, and which 		started showing my name instead of my username for some reason)
+
+I believe it shows your name if its specified in /etc/passwd, otherwise it shows your userid.
+
+	... is the only thing that I still need to change right now.  I feebly tried a few: ActionButtons, action-buttons, 		action-buttons-applet ... and, the googles, they do nothing. 
+	style "xfdesktop-icon-view" 
+	{
+		XfdesktopIconView::label-alpha = 0
+
+		fg[NORMAL] = "#ffffff"
+		fg[SELECTED] = "#ffffff"
+		fg[ACTIVE] = "#ffffff"
+	}
+
+	style "panel" 
+	{
+		fg[NORMAL] = "#eeeeee"
+		fg[SELECTED] = "#eeeeee"
+		fg[ACTIVE] = "#eeeeee"
+	}
+
+	widget_class "*XfdesktopIconView*" 	style "xfdesktop-icon-view"
+	widget_class "*Panel*" 			style "panel"
+	widget "*panel*" 			style "panel"
+	class "*panel*" 			style "panel"
+
+"*actions*" will work:
+
+	style "actions-plugin" 
+	{
+		fg[NORMAL] = "#ff0000"
+		fg[SELECTED] = "#ff0000"
+		fg[ACTIVE] = "#ff0000"
+	}
+
+	widget "*actions*" 			style "actions-plugin"
+
+...sets the colour to red.
+
+	Can someone point me to a chart of the plugins with their widget/class names?
+
+If you go to Panel Preferences, Items tab, and hover your mouse over the panel plugins, you will see something like:
+Internal name: actions-9
+PID: 2506
+...the first part of the internal name should be the widget name.
+
+*/
+
+
+
+
+

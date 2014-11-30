@@ -1,0 +1,35 @@
+
+
+gtk-theme-name = "Windows98"
+gtk-icon-theme-name = "Windows98"
+gtk-font-name = "Sans, 20"
+#gtk-font-name = "UnPilgi 8"
+#gtk-enable-tooltips = 0
+
+
+gtk_color_scheme = "text_normal:#000000"		# (WindowText=0 0 0)
+gtk_color_scheme = "text_focused:#FFFFFF"		# (HilightText=255 255 255)
+gtk_color_scheme = "text_insensitive:#587AB1"		# (GrayText=88 122 177)
+gtk_color_scheme = "bg_focused:#008080"			# (Hilight=0 128 128)
+gtk_color_scheme = "widgets_bg:#B4C3DC"			# (Menu=180 195 220)
+
+gtk_color_scheme = "scrollbar:#B4C3DC"			# (Menu=180 195 220)
+gtk_color_scheme = "scrollbar_bg:#DAE1ED"		# (Scrollbar=218 225 237)
+gtk_color_scheme = "stepper:black"
+gtk_color_scheme = "expander:black"
+
+gtk_color_scheme = "container_bg:#FFFFFF"		# (Window=255 255 255)
+
+gtk_color_scheme = "titlebar_text:#FFFFFF"		# (TitleText=255 255 255)
+gtk_color_scheme = "titlebar_bg:#008080"		# (ActiveTitle=0 128 128)
+gtk_color_scheme = "titlebar_text_inactive:#000080"	# (InactiveTitleText=0 0 128)
+gtk_color_scheme = "titlebar_bg_inactive:#587AB1"	# (InactiveTitle=88 122 177)
+
+gtk_color_scheme = "desktop_icon_text:white"
+gtk_color_scheme = "desktop_icon_text_selected:white"
+gtk_color_scheme = "desktop_icon_text_active:white"
+
+gtk_color_scheme = "tooltips_text:#000000"		# (InfoText=0 0 0)
+gtk_color_scheme = "tooltips_bg:#FFFFFF"		# (InfoWindow=255 255 225)
+
+

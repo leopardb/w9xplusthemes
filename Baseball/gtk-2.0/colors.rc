@@ -1,0 +1,31 @@
+
+
+gtk-theme-name = "Baseball"
+gtk-icon-theme-name = "Baseball"
+#gtk-enable-tooltips = 0
+
+
+gtk_color_scheme = "text_normal:#000000"		# (WindowText=0 0 0)
+gtk_color_scheme = "text_focused:#FFFFFF"		# (HilightText=255 255 255)
+gtk_color_scheme = "text_insensitive:#A07038"		# (GrayText=160 112 56)
+gtk_color_scheme = "bg_focused:#FF0000"			# (Hilight=255 0 0)
+gtk_color_scheme = "widgets_bg:#D0A870"			# (Menu=208 168 112)
+
+gtk_color_scheme = "scrollbar:#D0A870"			# (Menu=208 168 112)
+gtk_color_scheme = "scrollbar_bg:#E8D0B8"		# (Scrollbar=232 208 184)
+gtk_color_scheme = "stepper:black"
+gtk_color_scheme = "expander:black"
+
+gtk_color_scheme = "container_bg:#FFFFFF"		# (Window=255 255 255)
+
+gtk_color_scheme = "titlebar_text:#FFFFFF"		# (TitleText=255 255 255)
+gtk_color_scheme = "titlebar_bg:#FF0000"		# (ActiveTitle=255 0 0)
+gtk_color_scheme = "titlebar_text_inactive:#D0A870"	# (InactiveTitleText=208 168 112)
+gtk_color_scheme = "titlebar_bg_inactive:#A07038"	# (InactiveTitle=160 112 56)
+
+gtk_color_scheme = "desktop_icon_text:white"
+gtk_color_scheme = "desktop_icon_text_selected:white"
+gtk_color_scheme = "desktop_icon_text_active:white"
+
+gtk_color_scheme = "tooltips_text:#800000"		# (InfoText=128 0 0)
+gtk_color_scheme = "tooltips_bg:#E1E0D2"		# (InfoWindow=225 224 210)

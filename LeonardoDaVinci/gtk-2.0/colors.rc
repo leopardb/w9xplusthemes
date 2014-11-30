@@ -1,0 +1,31 @@
+
+
+gtk-theme-name = "LeonardoDaVinci"
+gtk-icon-theme-name = "LeonardoDaVinci"
+#gtk-enable-tooltips = 0
+
+
+gtk_color_scheme = "text_normal:#000000"		# (WindowText=0 0 0)
+gtk_color_scheme = "text_focused:#FFFFFF"		# (HilightText=255 255 255)
+gtk_color_scheme = "text_insensitive:#8B655C"		# (GrayText=139 101 92)
+gtk_color_scheme = "bg_focused:#800000"			# (Hilight=128 0 0)
+gtk_color_scheme = "widgets_bg:#BFA59F"			# (Menu=191 165 159)
+
+gtk_color_scheme = "scrollbar:#BFA59F"			# (Menu=191 165 159)
+gtk_color_scheme = "scrollbar_bg:#DFD2D0"		# (Scrollbar=223 210 208)
+gtk_color_scheme = "stepper:black"
+gtk_color_scheme = "expander:black"
+
+gtk_color_scheme = "container_bg:#FFFFFF"		# (Window=255 255 255)
+
+gtk_color_scheme = "titlebar_text:#FFFFFF"		# (TitleText=255 255 255)
+gtk_color_scheme = "titlebar_bg:#800000"		# (ActiveTitle=128 0 0)
+gtk_color_scheme = "titlebar_text_inactive:#DFD2D0"	# (InactiveTitleText=223 210 208)
+gtk_color_scheme = "titlebar_bg_inactive:#8B655C"	# (InactiveTitle=139 101 92)
+
+gtk_color_scheme = "desktop_icon_text:white"
+gtk_color_scheme = "desktop_icon_text_selected:white"
+gtk_color_scheme = "desktop_icon_text_active:white"
+
+gtk_color_scheme = "tooltips_text:#000000"		# (InfoText=0 0 0)
+gtk_color_scheme = "tooltips_bg:#FFFFFF"		# (InfoWindow=255 255 255)

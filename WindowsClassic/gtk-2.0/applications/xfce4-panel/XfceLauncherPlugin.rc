@@ -1,0 +1,38 @@
+
+style "XfceLauncherPlugin"
+{
+
+######	Style Properties
+
+	#xthickness = 10
+	#ythickness = 10
+
+
+######	Colors
+
+	fg[NORMAL]		= @text_normal	# arrow
+	fg[PRELIGHT]		= @test_fg
+	fg[SELECTED]		= @test_fg
+	fg[ACTIVE]		= @test_fg
+	fg[INSENSITIVE]		= @test_fg
+
+	bg[NORMAL]		= @test_bg
+	bg[PRELIGHT]		= @widgets_bg
+	bg[SELECTED]		= @test_bg
+	bg[ACTIVE]		= @widgets_bg
+	bg[INSENSITIVE]		= @test_bg
+
+	text[NORMAL]		= @test_text
+	text[PRELIGHT]		= @test_text
+	text[SELECTED]		= @test_text
+	text[ACTIVE]		= @test_text
+	text[INSENSITIVE]	= @test_text
+
+	base[NORMAL]		= @test_base
+	base[ACTIVE]		= @test_base
+	base[PRELIGHT]		= @test_base
+	base[SELECTED]		= @test_base
+	base[INSENSITIVE]	= @test_base
+}
+
+widget_class "XfcePanelWindow.PanelItembar.XfceLauncherPlugin.XfceHVBox.GtkButton*" style "XfceLauncherPlugin"

@@ -1,0 +1,118 @@
+GtkNotebook {
+	/**
+	* Style properties inheritance:
+	*  GtkNotebook->GtkContainer->GtkWidget.
+	*/
+
+	/* The "arrow-spacing" property defines the spacing between the scroll arrows and the tabs. */
+	/* arrow-spacing: 0; */ /* gint, >= 0 */
+
+	/* The "has-backward-stepper" property determines whether the standard backward arrow button is displayed. */
+	/* has-backward-stepper: TRUE; */ /* gboolean */
+
+	/* The "has-forward-stepper" property determines whether the standard forward arrow button is displayed. */
+	/* has-forward-stepper: TRUE; */ /* gboolean */
+
+	/* The "has-secondary-backward-stepper" property determines whether a second backward arrow button is displayed on the opposite end of the tab area. */
+	/* has-secondary-backward-stepper: FALSE; */ /* gboolean */
+
+	/* The "has-secondary-forward-stepper" property determines whether a second forward arrow button is displayed on the opposite end of the tab area. */
+	/* has-secondary-forward-stepper: FALSE; */ /* gboolean */
+
+	/* The "initial-gap" property defines the minimum size for the initial gap between the first tab. */
+	/* initial-gap: 0; */ /* gint, >= 0 */
+
+	/* The "tab-curvature" property defines size of tab curvature. */
+	/* tab-curvature: 1; */ /* gint, >= 0 */
+
+	/* The "tab-overlap" property defines size of tab overlap area. */
+	/* tab-overlap: 2; */ /* gint */
+
+	/*padding: 2px;*/
+	/*padding-right: 2px;
+	padding-left: 2px;*/
+
+}
+
+/* Match the first notebook tab. */
+/*GtkNotebook tab:first-child { ... } */
+/*GtkNotebook tab:nth-child(first) { ... } */
+
+/* Match the last notebook tab. */
+/*GtkNotebook tab:last-child { ... } */
+/*GtkNotebook tab:nth-child(last) { ... } */
+
+/* Match the labels in notebook tabs. */
+/*GtkNotebook tab GtkLabel { ... } */
+
+/*GtkNotebook tab:hover {
+	color: @test_red;
+	background-color: @test_blue;
+	border-width: 5px;
+	border-style: inset;
+	font:Serif 20;
+}*/
+
+/*GtkNotebook :active {
+	background-color: @test_green;
+}*/
+
+/*.notebook .active-page {
+	color: @test_blue;
+	background-color: @test_green;
+	border-width: 5px;
+	border-color: @test_green;
+	border-style: solid;
+}*/
+
+/*.notebook tab {
+	border-width: 1px;
+	border-color: @buttonshadow;
+	border-style: solid;
+	border-radius: 10px 10px 0px 0px;
+	padding: 5px;
+}*/
+
+.notebook tab GtkLabel {
+	border-width: 1px;
+	border-color: @buttonshadow;
+	border-style: solid;
+	border-radius: 10px 10px 0px 0px;
+	padding: 5px;
+}
+
+.notebook tab .active-page {
+	border-width: 2px;
+	border-color: @buttonshadow;
+	border-style: outset;
+	font: bold;
+}
+
+/*.notebook tab.top:hover,
+.notebook tab.bottom {
+	color: @test_blue;
+	background-color: @test_green;
+	border-width: 5px;
+	border-color: @test_green;
+	border-style: solid;
+
+}*/
+
+
+
+/*GtkNotebook tab:nth-child(first) GtkLabel {
+	color: @test_blue;
+	font:Serif 20;
+	border-width: 1px;
+	border-style: inset;
+}*/
+
+/*GtkNotebook tab:focused GtkLabel {
+	font:Serif 20;
+	color: @test_red;
+	border-width: 1px;
+	border-style: inset;
+}*/
+
+
+

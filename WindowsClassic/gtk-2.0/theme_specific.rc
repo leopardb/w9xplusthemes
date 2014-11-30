@@ -1,0 +1,8 @@
+
+style "GtkWindowFont"
+{
+	#font_name = "Microsoft Sans Serif Bold 20"
+}
+
+class "GtkWindow" style "GtkWindowFont"
+

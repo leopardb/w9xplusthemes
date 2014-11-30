@@ -1,0 +1,110 @@
+
+style "GtkWindow"
+{
+######	Style Properties
+
+
+######	Colors
+
+	fg[NORMAL]		= @text_normal			# libreoffice
+	fg[PRELIGHT]		= @text_normal			# libreoffice
+	fg[SELECTED]		= @titlebar_text		# titlebar text
+	fg[ACTIVE]		= @test_fg
+	fg[INSENSITIVE]		= @titlebar_text_inactive	# titlebar text (other windows)
+
+	bg[NORMAL]		= @widgets_bg			# widget background
+	bg[PRELIGHT]		= @test_bg
+	bg[SELECTED]		= @titlebar_bg			# titlebar bg (inactive tabs' bg in chromium (!?!))
+	bg[ACTIVE]		= @test_bg
+	bg[INSENSITIVE]		= @titlebar_bg_inactive		# titlebar bg (other windows) (+tabs'bar bg in chromium (!?!))
+
+	text[NORMAL]		= @text_normal			# libreoffice
+	text[PRELIGHT]		= @test_text
+	text[SELECTED]		= @text_normal			# libreoffice
+	text[ACTIVE]		= @test_text
+	text[INSENSITIVE]	= @test_text
+
+	base[NORMAL]		= @widgets_bg			# libreoffice
+	base[PRELIGHT]		= @test_base
+	base[SELECTED]		= @widgets_bg			# libreoffice
+	base[ACTIVE]		= @test_base
+	base[INSENSITIVE]	= @test_base
+}
+
+
+class "GtkWindow" style "GtkWindow"
+#widget_class "*xfwm*" style "GtkWindow"
+
+style "GtkFrame"
+{
+	bg[NORMAL]		= @widgets_bg
+}
+
+class "GtkFrame"    style "GtkFrame"
+
+
+style "GtkStatusbar"
+{
+######	Style Properties
+
+
+######	Colors
+
+	fg[NORMAL]		= @test_color	# ?
+	bg[NORMAL]		= @widgets_bg	# resizing arrow bg
+	text[NORMAL]		= @test_color	# ?
+	base[NORMAL]		= @test_color	# ?
+
+	fg[ACTIVE]		= @test_color	# ?
+	bg[ACTIVE]		= @test_color	# ?
+	text[ACTIVE]		= @test_color	# ?
+	base[ACTIVE]		= @test_color	# ?
+
+	fg[PRELIGHT]		= @test_color	# ?
+	bg[PRELIGHT]		= @test_color	# ?
+	text[PRELIGHT]		= @test_color	# ?
+	base[PRELIGHT]		= @test_color	# ?
+
+	fg[SELECTED]		= @test_color	# ?	
+	bg[SELECTED]		= @test_color	# ?	
+	text[SELECTED]		= @test_color	# ?
+	base[SELECTED]		= @test_color	# ?
+
+	fg[INSENSITIVE]		= @test_color	# ?	
+	bg[INSENSITIVE]		= @test_color	# ?
+	text[INSENSITIVE]	= @test_color	# ?
+	base[INSENSITIVE]	= @test_color	# ?
+}
+
+class "GtkStatusbar" style "GtkStatusbar"
+
+
+style "GtkSeparator"
+{
+	fg[NORMAL]		= @test_color	# ?
+	bg[NORMAL]		= @widgets_bg
+	text[NORMAL]		= @test_color	# ?
+	base[NORMAL]		= @test_color	# ?
+
+	fg[ACTIVE]		= @test_color	# ?
+	bg[ACTIVE]		= @test_color	# ?
+	text[ACTIVE]		= @test_color	# ?
+	base[ACTIVE]		= @test_color	# ?
+
+	fg[PRELIGHT]		= @test_color	# ?
+	bg[PRELIGHT]		= @test_color	# ?
+	text[PRELIGHT]		= @test_color	# ?
+	base[PRELIGHT]		= @test_color	# ?
+
+	fg[SELECTED]		= @test_color	# ?	
+	bg[SELECTED]		= @test_color	# ?	
+	text[SELECTED]		= @test_color	# ?
+	base[SELECTED]		= @test_color	# ?
+
+	fg[INSENSITIVE]		= @test_color	# ?	
+	bg[INSENSITIVE]		= @test_color	# ?
+	text[INSENSITIVE]	= @test_color	# ?
+	base[INSENSITIVE]	= @test_color	# ?
+}
+
+class "GtkSeparator"    style "GtkSeparator"

@@ -1,0 +1,31 @@
+
+
+gtk-theme-name = "Jungle"
+gtk-icon-theme-name = "Jungle"
+#gtk-enable-tooltips = 0
+
+
+gtk_color_scheme = "text_normal:#000000"		# (WindowText=0 0 0)
+gtk_color_scheme = "text_focused:#F09010"		# (HilightText=240 144 16)
+gtk_color_scheme = "text_insensitive:#807040"		# (GrayText=128 112 64)
+gtk_color_scheme = "bg_focused:#800000"			# (Hilight=128 0 0)
+gtk_color_scheme = "widgets_bg:#B8A068"			# (Menu=184 160 104)
+
+gtk_color_scheme = "scrollbar:#B8A068"			# (Menu=184 160 104)
+gtk_color_scheme = "scrollbar_bg:#E0D0B8"		# (Scrollbar=224 208 184)
+gtk_color_scheme = "stepper:black"
+gtk_color_scheme = "expander:black"
+
+gtk_color_scheme = "container_bg:#FFFFFF"		# (Window=255 255 255)
+
+gtk_color_scheme = "titlebar_text:#F09010"		# (TitleText=240 144 16)
+gtk_color_scheme = "titlebar_bg:#000000"		# (ActiveTitle=0 0 0)
+gtk_color_scheme = "titlebar_text_inactive:#800000"	# (InactiveTitleText=128 0 0)
+gtk_color_scheme = "titlebar_bg_inactive:#807040"	# (InactiveTitle=128 112 64)
+
+gtk_color_scheme = "desktop_icon_text:white"
+gtk_color_scheme = "desktop_icon_text_selected:white"
+gtk_color_scheme = "desktop_icon_text_active:white"
+
+gtk_color_scheme = "tooltips_text:#000000"		# (InfoText=0 0 0)
+gtk_color_scheme = "tooltips_bg:#FFFFFF"		# (InfoWindow=255 255 225)

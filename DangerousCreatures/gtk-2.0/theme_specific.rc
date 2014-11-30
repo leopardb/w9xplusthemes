@@ -1,0 +1,24 @@
+
+style "GeneralFont"
+{
+	font_name = "Arial, 8"
+}
+
+class "*" style "GeneralFont"
+
+
+style "PanelFont"
+{
+	font_name = "Arial, 8"
+}
+
+widget_class "XfcePanelWindow.PanelItembar*" style "PanelFont"
+
+
+style "StartButtonFont"
+{
+	font_name = "Arial, Bold 8"
+}
+
+widget_class "XfcePanelWindow.PanelItembar.XfceApplicationsMenuPlugin.GtkToggleButton.XfceHVBox.GtkLabel" style "StartButtonFont"
+widget_class "ThunarWindow.GtkTable.GtkHPaned.GtkTable.ThunarStatusbar*" style "StartButtonFont"

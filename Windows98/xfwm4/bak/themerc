@@ -1,0 +1,49 @@
+
+button_layout=O|HMC
+button_offset=1
+button_spacing=0
+
+title_alignment=left
+title_horizontal_offset=2
+title_vertical_offset_active=1
+title_vertical_offset_inactive=1
+title_font=Arial Bold Italic 11
+
+#title_shadow_active=false
+#title_shadow_inactive=false
+#full_width_title=false
+#title_full_width=false
+
+maximized_offset=2
+show_app_icon=true
+
+active_border_color=#000000
+inactive_border_color=#000000
+
+#active_border_color=#000000
+#active_shadow_2=#587AB1
+#active_color_2=#B4C3DC
+#active_hilight_2=#DAE1ED
+
+#active_text_color=
+#inactive_text_color=
+#active_text_shadow_color=
+#inactive_text_shadow_color=
+
+#inactive_border_color=#00FF00
+
+#active_color_1=#503840
+#active_hilight_1=#FF0000
+#active_mid_1=
+#active_mid_2=
+#active_shadow_1=
+
+#inactive_color_1=#FF0000	# title bar bg
+#inactive_color_2=#00FF00	# window border
+#inactive_hilight_1=#FF0000	# ??
+#inactive_hilight_2=#00FF00	# top links outer border
+#inactive_mid_1=#FF0000		# ??
+#inactive_mid_2=#00FF00		# ??
+#inactive_shadow_1=#FF0000	# ??
+#inactive_shadow_2=#00FF00	# bottom right outer border
+
