@@ -214,8 +214,10 @@ GtkLabel:insensitive {
 	padding: 10px;
 }*/
 
-
 .pane-separator {
+	engine: xfce;
+	/*-xfce-grip-style: disabled;*/
+	color: @widgets_bg;
 	background-color: darker(@widgets_bg);
 }
 
