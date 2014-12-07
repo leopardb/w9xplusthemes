@@ -30,7 +30,7 @@ style "standard-scrollbar"
 
 ######	Colors
 
-	/*fg[NORMAL]		= @stepper		# stepper color when not disabled (insensitive)
+	fg[NORMAL]		= @stepper		# stepper color when not disabled (insensitive)
 	fg[PRELIGHT]		= @test_fg
 	fg[SELECTED]		= @test_fg
 	fg[ACTIVE]		= @test_fg
@@ -52,9 +52,9 @@ style "standard-scrollbar"
 	base[ACTIVE]		= @test_base
 	base[PRELIGHT]		= @test_base
 	base[SELECTED]		= @test_base
-	base[INSENSITIVE]	= @test_base*/
+	base[INSENSITIVE]	= @test_base
 
-	/*fg[NORMAL]		= @test_fg
+/*	fg[NORMAL]		= @test_fg
 	fg[PRELIGHT]		= @test_fg
 	fg[SELECTED]		= @test_fg
 	fg[ACTIVE]		= @test_fg
@@ -83,6 +83,6 @@ style "standard-scrollbar"
 #class "GtkScale" style "standard-scrollbar"
 class "GtkScrollbar" style "standard-scrollbar"
 
-#widget_class "*Scrollbar*" style "standard-scrollbar"
+widget_class "*Scrollbar*" style "standard-scrollbar"
 #widget_class "GtkScrollbar" style "standard-scrollbar"
 

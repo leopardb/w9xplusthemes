@@ -238,7 +238,6 @@ GtkLabel:insensitive {
 
     /*-GtkWidget-focus-padding: 1;
     -GtkWidget-focus-line-width: 0;
-    padding: 2px 3px;
     border-style: solid;
     border-width: 1px;
     border-radius: 3px;*/
@@ -260,6 +259,10 @@ GtkLabel:insensitive {
 	border-color: @test_blue;
 	border-width: 2px;*/
 	border-style: inset;
+}
+
+.button GtkLabel {
+    padding: 3px;
 }
 
 .arrow {
