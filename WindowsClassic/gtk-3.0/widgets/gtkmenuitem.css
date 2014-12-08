@@ -23,7 +23,7 @@ GtkMenuItem {
 	/* width-chars: 12; */ /* gint, >= 0 */
 	color: @text_normal;
 	background-color: @widgets_bg;
-	padding: 2px;
+	padding: 5px;
 }
 
 GtkMenuItem:hover {

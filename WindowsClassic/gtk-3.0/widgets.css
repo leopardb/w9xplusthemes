@@ -51,11 +51,11 @@ GtkLabel:insensitive {
 
 .frame {
 	/* Members: GtkFrame. */
-	color: @text_normal;
-	/*background-color: @container_bg;*/
-	border-width: 1px;
+	/*color: @text_normal;
+	background-color: @container_bg;*/
+	/*border-width: 4px;
 	border-style: dotted;
-	border-color: black;
+	border-color: black;*/
 }
 
 .frame .entry:selected {
@@ -172,8 +172,10 @@ GtkLabel:insensitive {
 	color: @test_red;
 }
 
-/*
-.scrollbar.button {
+
+
+
+/*.scrollbar.button {
 	background-color: @test_blue;
 	color: @test_red;
 }
@@ -181,16 +183,18 @@ GtkLabel:insensitive {
 .scrollbar.slider {
 	background-color: @test_red;
 	color: @test_green;
-}
+}*/
 
 .scrollbar.trough {
-	background-color: @test_green;
 	color: @test_blue;
-	margin: 3px;
-	border-width: 2px;
-	border-style: dotted;
-	border-color: test_red;
-}*/
+
+	/*background-color: @test_green;
+	margin: 0px;*/
+
+	/*border-width: 2px;
+	border-style: solid;
+	border-color: @test_red;*/
+}
 
 
 
@@ -232,6 +236,8 @@ GtkLabel:insensitive {
 	color: @text_normal;
 	background-color: @widgets_bg;
 
+    padding: 3px;
+
 	border-color: @buttonshadow;
 	border-width: 2px;
 	border-style: outset;
@@ -261,9 +267,9 @@ GtkLabel:insensitive {
 	border-style: inset;
 }
 
+/*
 .button GtkLabel {
-    padding: 3px;
-}
+}*/
 
 .arrow {
 	/* Members: GtkArrow. */
@@ -276,6 +282,9 @@ GtkLabel:insensitive {
 }
 
 /*
+
+Works in Rhythmbox
+
 .menuitem.button {
 	background-color: @test_green;
 	color: @test_blue;

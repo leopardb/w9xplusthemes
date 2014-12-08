@@ -53,3 +53,8 @@ GtkTreeView:selected {
 /* Match even/odd numbered rows in a GtkTreeView. */
 /*GtkTreeView row:nth-child (even) { ... } */
 /*GtkTreeView row:nth-child (odd) { ... } */
+
+/*GtkTreeView:selected {
+	color: @test_green;
+	background-color: @test_blue;
+}*/
