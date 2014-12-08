@@ -303,6 +303,11 @@ Works in Rhythmbox
 	font: Sans, 20;
 }*/
 
+.menuitem.button {
+	border-width: 2px;
+	border-style: none;
+}
+
 
 .menuitem.button:hover {
 	background-color: @bg_focused;
